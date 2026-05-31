@@ -1,0 +1,87 @@
+<section id="system-design" class="py-24 bg-dark-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="font-mono text-primary-400 text-sm mb-2">Backend Architecture Focus</p>
+      <h2 class="text-3xl md:text-5xl font-bold flex items-center justify-center gap-4">
+        System Design Highlights
+      </h2>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Mock System Diagram -->
+      <div class="bg-dark-800 p-8 rounded-2xl border border-white/5 shadow-xl relative overflow-hidden flex items-center justify-center min-h-[400px]">
+        <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:20px_20px]"></div>
+        
+        <div class="relative z-10 w-full flex flex-col gap-6">
+          <!-- Load Balancer -->
+          <div class="flex justify-center">
+            <div class="px-6 py-2 bg-slate-700/50 border border-slate-500 rounded text-xs font-mono text-white text-center w-48 shadow-lg">
+              Load Balancer / Gateway
+            </div>
+          </div>
+          
+          <!-- Arrows -->
+          <div class="flex justify-center gap-16 text-primary-500">
+            <span>↓</span><span>↓</span><span>↓</span>
+          </div>
+          
+          <!-- Microservices -->
+          <div class="flex justify-center gap-4">
+            <div class="w-24 h-24 bg-primary-900/40 border border-primary-500/50 rounded-lg flex items-center justify-center text-xs font-mono text-primary-300 text-center p-2 shadow-[0_0_15px_rgba(59,130,246,0.2)]">Auth Service</div>
+            <div class="w-24 h-24 bg-primary-900/40 border border-primary-500/50 rounded-lg flex items-center justify-center text-xs font-mono text-primary-300 text-center p-2 shadow-[0_0_15px_rgba(59,130,246,0.2)]">User Service</div>
+            <div class="w-24 h-24 bg-primary-900/40 border border-primary-500/50 rounded-lg flex items-center justify-center text-xs font-mono text-primary-300 text-center p-2 shadow-[0_0_15px_rgba(59,130,246,0.2)]">Data Engine</div>
+          </div>
+          
+          <!-- Arrows -->
+          <div class="flex justify-center gap-8 text-accent-500 mt-2">
+            <span>↕</span><span>↕</span>
+          </div>
+          
+          <!-- Databases / Cache -->
+          <div class="flex justify-center gap-6">
+            <div class="flex items-center gap-2 px-4 py-3 bg-dark-900 border border-red-500/30 rounded text-xs font-mono text-slate-300">
+              <span class="text-red-400">🛢️</span> Redis Cache
+            </div>
+            <div class="flex items-center gap-2 px-4 py-3 bg-dark-900 border border-green-500/30 rounded text-xs font-mono text-slate-300">
+              <span class="text-green-400">🍃</span> MongoDB Cluster
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="space-y-8">
+        <div class="p-6 bg-dark-800/50 border-l-2 border-primary-500 hover:bg-dark-800 transition-colors">
+          <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+            <span class="text-primary-400">⚡</span> Scalability & Resilience
+          </h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Experience designing architectures capable of handling massive concurrency. Utilizing horizontal scaling strategies, stateless microservices, and implementing robust circuit breakers to prevent cascading failures.
+          </p>
+        </div>
+        
+        <div class="p-6 bg-dark-800/50 border-l-2 border-accent-500 hover:bg-dark-800 transition-colors">
+          <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+            <span class="text-accent-400">🚀</span> Performance Metrics
+          </h3>
+          <ul class="text-sm text-slate-400 leading-relaxed space-y-2 mt-3 font-mono">
+            <li class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span>API Latency Reduction</span>
+              <span class="text-accent-400 font-bold">~40%</span>
+            </li>
+            <li class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span>Database Query Speed</span>
+              <span class="text-accent-400 font-bold">+60% Avg</span>
+            </li>
+            <li class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span>System Uptime Target</span>
+              <span class="text-accent-400 font-bold">99.99%</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

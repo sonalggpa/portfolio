@@ -1,0 +1,35 @@
+/* Custom smooth animations that Tailwind doesn't provide out of the box */
+
+@keyframes pulse-slow {
+  0% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(1.05); }
+  100% { opacity: 0.1; transform: scale(1); }
+}
+
+.blur-\[120px\] {
+  animation: pulse-slow 8s infinite alternate ease-in-out;
+}
+
+/* Specific staggered animation delays */
+.space-y-32 > div:nth-child(1) .blur-\[120px\] {
+  animation-delay: 0s;
+}
+
+.space-y-32 > div:nth-child(2) .blur-\[120px\] {
+  animation-delay: 2s;
+}
+
+.space-y-32 > div:nth-child(3) .blur-\[120px\] {
+  animation-delay: 4s;
+}
+
+/* High end text gradient shimmer effect */
+@keyframes text-shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.bg-clip-text {
+  background-size: 200% auto;
+  animation: text-shimmer 4s linear infinite;
+}

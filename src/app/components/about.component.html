@@ -1,0 +1,53 @@
+<section id="about" class="py-24 bg-dark-900 border-t border-white/5">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-4">
+      <span class="text-primary-500 font-mono text-xl">01.</span> About Me
+      <div class="h-px bg-white/10 flex-grow ml-4"></div>
+    </h2>
+    
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 text-slate-400 text-lg leading-relaxed">
+        <p>
+          I am a <strong class="text-white">Senior Software Engineer</strong> with {{ experienceYears }}+ years of experience, specializing in backend architecture with a robust capability in full-stack implementation. My passion lies in designing high-performance systems and turning complex real-world problems into elegant, scalable solutions.
+        </p>
+        
+        <p>
+          My primary focus is <strong class="text-primary-400">Backend Engineering</strong>. I architect REST APIs, microservices, and distributed systems using Node.js. I have extensive experience in database performance tuning, implementing caching mechanisms like Redis, and optimizing API response times across high-traffic platforms.
+        </p>
+        
+        <p>
+          On the <strong class="text-accent-400">Frontend</strong>, I leverage Angular to build responsive, component-driven user interfaces. I bridge the gap between complex backend logic and seamless user experiences, ensuring data is presented optimally without sacrificing client-side performance.
+        </p>
+      </div>
+      
+      <div class="bg-dark-800 p-8 rounded-2xl border border-white/5 shadow-xl relative overflow-hidden group hover:border-primary-500/30 transition-colors">
+        <!-- Code Editor Vibe -->
+        <div class="flex items-center gap-2 mb-6 border-b border-white/10 pb-4">
+          <div class="w-3 h-3 rounded-full bg-red-500"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          <span class="ml-4 text-xs font-mono text-slate-500">developer-profile.ts</span>
+        </div>
+        
+        <pre class="font-mono text-sm overflow-x-auto"><code class="language-typescript">
+<span class="text-primary-400">const</span> developer = &#123;
+  <span class="text-accent-400">name</span>: <span class="text-yellow-300">'Sonal Gupta'</span>,
+  <span class="text-accent-400">role</span>: <span class="text-yellow-300">'Senior Software Engineer'</span>,
+  <span class="text-accent-400">experience</span>: <span class="text-orange-400">{{ experienceYears }}</span>,
+  
+  <span class="text-accent-400">strengths</span>: [
+    <span class="text-yellow-300">'REST APIs'</span>,
+    <span class="text-yellow-300">'Microservices'</span>,
+    <span class="text-yellow-300">'System Design'</span>,
+    <span class="text-yellow-300">'Scalability'</span>
+  ],
+
+  <span class="text-primary-400">getCloudExposure</span>() &#123;
+    <span class="text-primary-400">return</span> [<span class="text-yellow-300">'Azure'</span>, <span class="text-yellow-300">'Docker'</span>, <span class="text-yellow-300">'Kubernetes'</span>, <span class="text-yellow-300">'CI/CD'</span>];
+  &#125;
+&#125;;
+        </code></pre>
+      </div>
+    </div>
+  </div>
+</section>
